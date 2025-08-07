@@ -49,7 +49,11 @@ export default function Cart() {
                     className="w-16 h-16 object-contain"
                   />
                   <div>
-                    <h4 className="font-semibold">{item.name}</h4>
+                    alt={item.title}
+                    className="w-16 h-16 object-contain"
+                  />
+                  <div>
+                    <h4 className="font-semibold">{item.title}</h4>
                     <p className="text-sm text-gray-600">
                       ₹{item.price} × {item.quantity}
                     </p>
