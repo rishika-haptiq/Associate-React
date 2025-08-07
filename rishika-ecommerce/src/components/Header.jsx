@@ -147,7 +147,7 @@ export default function Header() {
               onClick={() => setMenuOpen(false)}
               className="hover:text-yellow-300"
             >
-              Books
+              Products
             </NavLink>
             <NavLink
               to="/about"
