@@ -44,7 +44,7 @@ export default function Cart() {
               >
                 <div className="flex items-center gap-4">
                   <img
-                    src={item.image_url}
+                    src={item.thumbnail}
                     alt={item.name}
                     className="w-16 h-16 object-contain"
                   />
