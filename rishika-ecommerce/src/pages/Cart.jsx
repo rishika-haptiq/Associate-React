@@ -13,7 +13,7 @@ export default function Cart() {
   const cart = useSelector((state) => state.cart);
 
   const getTotal = () =>
-    cart.reduce((sum, item) => sum + item.quantity * item.price.amount, 0);
+    cart.reduce((sum, item) => sum + item.quantity * item.price, 0);
 
   const navigate = useNavigate();
   const isLoggedIn = useSelector((state) => state.auth.isAuthenticated);
