@@ -51,8 +51,7 @@ export default function Cart() {
                   <div>
                     <h4 className="font-semibold">{item.name}</h4>
                     <p className="text-sm text-gray-600">
-                      {item.price.symbol}
-                      {item.price.amount} × {item.quantity}
+                      ₹{item.price} × {item.quantity}
                     </p>
                   </div>
                 </div>
