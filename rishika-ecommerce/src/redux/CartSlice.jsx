@@ -72,6 +72,14 @@ const cartSlice = createSlice({
     },
 restoreCart: (state, action) => {
   const restoredCart = action.payload;
+  try {
+    const user = JSON.parse(localStorage.getItem("loggedInUser"));
+    if (user?.email) {
+      localStorage.setItem(`cart_${user.email}`, JSON.stringify(restoredCart));
+    }
+  } catch (error) {
+    console.error("Error updating localStorage in restoreCart:", error);
+  }
   return restoredCart;
 },
     clearCart: (state) => {
