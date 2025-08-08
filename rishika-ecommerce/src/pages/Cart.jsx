@@ -50,7 +50,6 @@ export default function Cart() {
                   />
                   <div>
                     alt={item.title}
-                    className="w-16 h-16 object-contain"
                   <div>
                     <h4 className="font-semibold">{item.title}</h4>
                     <p className="text-sm text-gray-600">
