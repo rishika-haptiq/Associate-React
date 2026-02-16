@@ -1,2 +1,2 @@
 # Associate-React
-Associate training React Assignments
+Associate training React Assignment
